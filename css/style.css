@@ -81,6 +81,19 @@ h1, h2, h3 {
   color: #FCF3E4;
   background-color: #664229;
 }
+@media screen and (min-width: 600px) and (max-width: 770px) {
+  .menu__link {
+    margin: 5px;
+    padding: 10px 10px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 599px) {
+  .menu__link {
+    font-size: 14px;
+    margin: 5px;
+    padding: 10px 5px;
+  }
+}
 
 .text {
   margin: 30px auto;

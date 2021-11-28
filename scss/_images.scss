@@ -1,0 +1,29 @@
+@use 'colors';
+@use 'common';
+
+
+.header__image {
+    width: 100%;
+    border-bottom: 2px solid colors.$color-dark;
+    border-top: 2px solid colors.$color-dark;
+}
+
+.bubble__image {
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border: 2px solid colors.$color-dark;
+
+    &--big {
+        width: 150px;
+        height: 150px;
+
+        @media screen and (min-width: 900px) {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    
+}

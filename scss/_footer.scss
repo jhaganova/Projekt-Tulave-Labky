@@ -1,0 +1,18 @@
+@use 'colors';
+@use 'common';
+
+.footer {
+    padding: 30px;
+    background-color: colors.$color-dark;
+    color: colors.$color-content-bg;
+    text-align: center;
+}
+
+.footer__text {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer__text--small {
+    font-size: 12px;
+}

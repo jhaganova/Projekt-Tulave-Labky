@@ -1,48 +1,46 @@
-<!DOCTYPE html>
-<html lang="sk">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Túlavé Labky</title>
+---
+layout: main-template.njk
+title: Túlavé Labky
+---
 
-    <link rel="stylesheet" href="css/style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&family=Work+Sans&display=swap" rel="stylesheet">
-    
-</head>
-<body>
-    <div class="content">
         <div class="header">
             <div class="menu">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a href="#" class="menu__link menu__link--active">Úvod</a>
+                        <a href="/" class="menu__link menu__link--active no-decor">Úvod</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">Psíkovia</a>
+                        <a href="/psikovia/" class="menu__link no-decor">Psíkovia</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">Ako adoptovať</a>
+                        <a href="/adopcia/" class="menu__link no-decor">Ako adoptovať</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">Ako pomôcť</a>
+                        <a href="/pomoc/" class="menu__link no-decor">Ako pomôcť</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">Blog</a>
+                        <a href="/blog/" class="menu__link no-decor">Blog</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#" class="menu__link">Kontakt</a>
+                        <a href="/kontakt/" class="menu__link no-decor">Kontakt</a>
                     </li>
                 </ul>
             </div>
 
-            <picture>
-                <source media="(min-width: 900px)" srcset="/images/header.jpg">
-                <img class="header__image" src="/images/header-small.jpg" alt="utulok tulave labky">
-            </picture>
+            <div class="header__text-image">
+
+                <picture>
+                    <source media="(min-width: 900px)" srcset="/images/header.jpg">
+                    <img class="header__image" src="/images/header-small.jpg" alt="utulok tulave labky">
+                </picture>
+
+                <div class="header__textbox">
+                    <h3 class="header__text">Všetky labky potrebujúdomov.</h3>
+                    <h3 class="header__text">Aj tie túlavé.</h3>
+
+                </div>
+            </div>
 
         </div>
 
@@ -74,13 +72,68 @@
 
 
 
+
+                <a href="/pomoc/" class="content-block__link content-block--wide no-decor">
+                    <div class="content-block">
+                        Pomôž nám
+                    </div>
+                </a>
+                
+
+
+                <picture>
+                    <source media="(min-width: 900px)" srcset="/images/dog-bubble04.jpg">
+                    <img class="bubble__image bubble__image--big" src="/images/dog-bubble04-small.jpg" alt="psík v bubline">
+                </picture>
+
+                <div class="text">
+                    <h2 class="text__section-title">O psíkoch</h2>
+
+                    <p class="text__content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, error? Quibusdam, rem. Illo, dignissimos dolore. Dicta saepe accusantium et rem quaerat beatae, consequatur ut officiis, incidunt quod at suscipit eius.Facere, eveniet, hic corporis quis quam dolores at tempora optio magnam officia repudiandae vitae nostrum beatae deserunt! Id nisi in quos aliquid nihil libero, est at voluptas? Et, molestiae dicta.</p>
+                
+                    <div class="text__content--center">
+                        <a href="/adopcia/" class="no-decor">
+                            <div class="button button--small text__button">Proces adopcie</div>
+                        </a>
+                    </div>
+                </div>
+
+                <picture>
+                    <source media="(min-width: 900px)" srcset="/images/dog-bubble05.jpg">
+                    <img class="bubble__image bubble__image--big" src="/images/dog-bubble05-small.jpg" alt="psík v bubline">
+                </picture>
+
+
+                <a href="/psikovia/" class="content-block__link content-block--wide no-decor">
+                    <div class="content-block">
+                        Adoptuj lásku
+                    </div>
+                </a>
+
+                <div class="highlights">
+
+                    <div class="highlights__box highlights__box--padded">
+                        <p class="highlights__text">lorem ipsum</p>
+                    </div>
+
+                    <div class="highlights__box">
+                        <picture class="highlights__image">
+                            <source media="(min-width: 900px)" srcset="/images/blanket-dog01.jpg">
+                            <img class="highlights__image" src="/images/blanket-dog01-small.jpg" alt="psík v bubline">
+                        </picture>
+                    </div>
+
+                    <div class="highlights__box highlights__box--padded">
+                        <p class="highlights__text">lorem ipsum</p>
+                    </div>
+
+                </div>
                 
             
 
             </div>
         </div>
 
-    </div>
+
+
     
-</body>
-</html>

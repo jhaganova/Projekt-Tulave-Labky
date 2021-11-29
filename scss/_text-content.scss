@@ -3,6 +3,7 @@
 
 .text {
     margin: 30px auto;
+    padding: 0 5%;
 
     @media screen and (min-width: 700px) {
         padding: 0 15%;
@@ -10,25 +11,28 @@
 
     @media screen and (min-width: 900px) {
         padding: 0;
+        margin: 0;
     }
     
-}
 
-.text__welcome-title {
-    text-align: center;
-    font-size: 28px;
-}
 
-.text__section-title {
-    text-align: center;
-    font-size: 20px;
-}
+    &__welcome-title {
+        text-align: center;
+        font-size: 28px;
+    }
 
-.text__content--emphasis {
-    font-weight: bold;
-    font-style: italic;
-}
+    &__section-title {
+        text-align: center;
+        font-size: 20px;
+    }
 
-.text__content--center {
-    text-align: center;
+    &__content--emphasis {
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    &__content--center {
+        text-align: center;
+    }
+
 }

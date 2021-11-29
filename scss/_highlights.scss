@@ -1,0 +1,58 @@
+@use 'colors';
+@use 'common';
+
+
+.highlights {
+    grid-column: span 3;
+    
+    @media screen and (min-width: 900px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px;
+        gap: 40px;
+        margin: 15px 50px;
+    }
+    
+    
+    &__box {
+        background-color: colors.$color-menu-bg;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        height: 200px;
+        box-sizing: border-box;
+
+        @media screen and (min-width: 400px) {
+            margin: 20px 15%;
+        }
+
+        @media screen and (min-width: 500px) {
+            margin: 20px auto;
+            width: 50%;
+        }
+
+        @media screen and (min-width: 900px) {
+            margin: 0;
+            width: auto;
+        }
+
+        &--padded {
+            padding: 20px;
+        }
+    }
+
+    &__image {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        display: block;
+    }
+
+    &__text {
+        text-transform: uppercase;
+    }
+}
+

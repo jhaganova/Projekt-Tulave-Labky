@@ -3,6 +3,7 @@ body {
   padding: 0;
   background-color: #664229;
   font-family: Nunito, sans-serif;
+  box-sizing: border-box;
 }
 @media screen and (min-width: 800px) {
   body {
@@ -22,10 +23,13 @@ h1, h2, h3 {
   margin-top: 0;
 }
 
+.no-decor {
+  text-decoration: none;
+}
+
 .content {
   max-width: 1100px;
   margin: auto;
-  background-color: #FCF3E4;
 }
 @media screen and (min-width: 650px) {
   .content {
@@ -36,7 +40,8 @@ h1, h2, h3 {
 }
 
 .content-main {
-  padding: 40px;
+  background-color: #FCF3E4;
+  padding: 20px 0;
 }
 
 @media screen and (min-width: 900px) {
@@ -58,6 +63,11 @@ h1, h2, h3 {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 550px) and (max-width: 770px) {
+  .menu__list {
+    justify-content: space-around;
+  }
+}
 .menu__item {
   margin: 0;
   padding: 0;
@@ -66,7 +76,6 @@ h1, h2, h3 {
 }
 .menu__link {
   display: block;
-  text-decoration: none;
   padding: 10px 20px;
   margin: 10px;
   border: 1px solid #332011;
@@ -81,22 +90,16 @@ h1, h2, h3 {
   color: #FCF3E4;
   background-color: #664229;
 }
-@media screen and (min-width: 600px) and (max-width: 770px) {
+@media screen and (min-width: 550px) and (max-width: 770px) {
   .menu__link {
-    margin: 5px;
+    margin: 2px;
     padding: 10px 10px;
-  }
-}
-@media screen and (min-width: 500px) and (max-width: 599px) {
-  .menu__link {
-    font-size: 14px;
-    margin: 5px;
-    padding: 10px 5px;
   }
 }
 
 .text {
   margin: 30px auto;
+  padding: 0 5%;
 }
 @media screen and (min-width: 700px) {
   .text {
@@ -106,24 +109,21 @@ h1, h2, h3 {
 @media screen and (min-width: 900px) {
   .text {
     padding: 0;
+    margin: 0;
   }
 }
-
 .text__welcome-title {
   text-align: center;
   font-size: 28px;
 }
-
 .text__section-title {
   text-align: center;
   font-size: 20px;
 }
-
 .text__content--emphasis {
   font-weight: bold;
   font-style: italic;
 }
-
 .text__content--center {
   text-align: center;
 }
@@ -132,8 +132,33 @@ h1, h2, h3 {
   width: 100%;
   border-bottom: 2px solid #332011;
   border-top: 2px solid #332011;
+  display: block;
 }
 
+.header__textbox {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .header__text-image {
+    position: relative;
+    display: flex;
+  }
+
+  .header__textbox {
+    display: inline-block;
+    position: absolute;
+    text-align: right;
+    top: 30px;
+    right: 30px;
+  }
+
+  .header__text {
+    margin: 0;
+    margin-bottom: 0.5em;
+    color: #FCF3E4;
+  }
+}
 .bubble__image {
   border-radius: 50%;
   -o-object-fit: cover;
@@ -151,4 +176,117 @@ h1, h2, h3 {
     width: 200px;
     height: 200px;
   }
+}
+
+.footer {
+  padding: 30px;
+  background-color: #332011;
+  color: #FCF3E4;
+  text-align: center;
+}
+
+.footer__text {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer__text--small {
+  font-size: 12px;
+}
+
+.content-block {
+  margin: 40px 0;
+  padding: 50px;
+  background-color: #EFDBB6;
+  text-align: center;
+}
+@media screen and (min-width: 900px) {
+  .content-block {
+    margin: 0;
+  }
+}
+.content-block__link {
+  color: #664229;
+  font-size: 20px;
+  font-weight: bold;
+}
+.content-block--wide {
+  grid-column: span 3;
+}
+.content-block:hover {
+  background-color: #cfb88c;
+  color: #FCF3E4;
+}
+
+.button {
+  border-radius: 8px;
+  background-color: #D2B48C;
+  color: #332011;
+  display: inline-block;
+  text-align: center;
+}
+.button--small {
+  padding: 5px 40px;
+}
+.button:hover {
+  background-color: #664229;
+  color: #FCF3E4;
+}
+
+.text__button {
+  margin: 15px 0;
+}
+
+.highlights {
+  grid-column: span 3;
+}
+@media screen and (min-width: 900px) {
+  .highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    gap: 40px;
+    margin: 15px 50px;
+  }
+}
+.highlights__box {
+  background-color: #D2B48C;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  height: 200px;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 400px) {
+  .highlights__box {
+    margin: 20px 15%;
+  }
+}
+@media screen and (min-width: 500px) {
+  .highlights__box {
+    margin: 20px auto;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .highlights__box {
+    margin: 0;
+    width: auto;
+  }
+}
+.highlights__box--padded {
+  padding: 20px;
+}
+.highlights__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  display: block;
+}
+.highlights__text {
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */

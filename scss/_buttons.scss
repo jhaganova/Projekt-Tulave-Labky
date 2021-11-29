@@ -1,0 +1,23 @@
+@use 'colors';
+@use 'common';
+
+.button {
+    border-radius: 8px;
+    background-color: colors.$color-menu-bg;
+    color: colors.$color-dark;
+    display: inline-block;
+    text-align: center;
+
+    &--small {
+        padding: 5px 40px; 
+    }
+
+    &:hover {
+        background-color: colors.$color-body-bg;
+        color: colors.$color-content-bg;
+    }
+}
+
+.text__button {
+    margin: 15px 0;
+}

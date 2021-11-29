@@ -6,7 +6,37 @@
     width: 100%;
     border-bottom: 2px solid colors.$color-dark;
     border-top: 2px solid colors.$color-dark;
+    display: block;
 }
+
+.header__textbox {
+    display: none;
+}
+
+
+@media screen and (min-width: 900px) {
+    .header__text-image {
+        position: relative;
+        display: flex;
+    }
+    
+    .header__textbox {
+        display: inline-block;
+        position: absolute;
+        text-align: right;
+        top: 30px;
+        right: 30px;
+    }
+    
+    .header__text {
+        margin: 0;
+        margin-bottom: 0.5em;
+        color: colors.$color-content-bg;
+    }    
+}
+
+
+
 
 .bubble__image {
     border-radius: 50%;
@@ -24,6 +54,5 @@
             height: 200px;
         }
     }
-
     
 }

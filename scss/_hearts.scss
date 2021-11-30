@@ -1,0 +1,28 @@
+.dogbox__image-wrap {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+.heart {
+    display: none;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+}
+
+.dogbox:hover .heart {
+    display: block;
+}
+
+.heart--left {
+    transform: rotate(-40deg);
+    top: 15px;
+}
+
+.heart--right {
+    transform: rotate(30deg);
+    right: 10px;
+    bottom: 10px;
+}

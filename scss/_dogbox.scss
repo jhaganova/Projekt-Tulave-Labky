@@ -1,0 +1,93 @@
+@use 'colors';
+@use 'common';
+
+.dog {
+    padding: 0 10px 20px 10px;
+}
+
+.dog__header {
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.dog__header::after {
+    content: "";
+    display: block;
+    width: 400px;
+    height: 1.5px;
+    background-color: colors.$color-menu-bg;
+    margin: 10px auto;
+}
+
+
+.dog__grid {
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+
+    @media screen and (min-width: 550px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    @media screen and (min-width: 900px) {
+            display: grid;
+            gap: 20px;
+            align-items: center;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: auto;
+            // grid rows
+            max-width: 850px;
+    }
+}
+
+.dogbox {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: colors.$color-highlight;
+    border: 1px solid colors.$color-highlight;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: colors.$color-content-bg;
+        border: 1px solid colors.$color-dark;
+    }
+}
+
+.dogbox__link {
+    text-decoration: none;
+    text-align: center;
+    color: colors.$color-dark;
+}
+
+.dogbox__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+    display: block;
+    border: 2px solid colors.$color-dark;
+}
+
+.dogbox__text {
+    padding-top: 20px;
+}
+
+.dogbox__name,
+.dogbox__descrip {
+    margin: 0;
+}
+
+.dogbox__name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+

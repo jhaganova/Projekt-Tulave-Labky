@@ -35,12 +35,7 @@
 
 
     @media screen and (min-width: 900px) {
-            display: grid;
-            gap: 20px;
-            align-items: center;
             grid-template-columns: repeat(3, 1fr);
-            grid-auto-rows: auto;
-            // grid rows
             max-width: 850px;
     }
 }

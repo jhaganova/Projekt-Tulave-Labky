@@ -12,7 +12,8 @@
     z-index: 2;
 }
 
-.dogbox:hover .heart {
+.dogbox:hover .heart,
+.dog-page__image-wrap:hover .heart {
     display: block;
 }
 

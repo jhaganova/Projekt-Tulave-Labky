@@ -38,6 +38,8 @@
 
 
 
+// bubbles
+
 .bubble__image {
     border-radius: 50%;
     object-fit: cover;
@@ -54,5 +56,57 @@
             height: 200px;
         }
     }
+
+    &--small {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+
+        @media screen and (min-width: 700px) {
+            width: 70px;
+            height: 70px;
+        }
+    }
     
+}
+
+
+
+
+
+// dogpage images 
+
+.dog-page__images--big {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+.dog-page__images--small {
+    display: flex;
+    padding: 15px 40px;
+    padding-bottom: 0;
+    justify-content: center;
+
+    @media screen and (min-width: 700px) {
+        padding: 15px;
+        padding-bottom: 0;
+    }
+}
+
+
+
+
+
+// dogpage back arrow
+
+.back-button__image {
+    height: 35px;
+    width: 35px;
+
+    @media screen and (min-width: 900px) {
+        height: 50px;
+        width: 50px;
+        padding-left: 30px;
+    }
 }

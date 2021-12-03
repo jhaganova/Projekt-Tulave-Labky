@@ -42,11 +42,26 @@
 }
 
 
+@media screen and (min-width: 700px) {
+    .dog-page__description {
+        padding-bottom: 15px;
+    }
+}
+
+
 
 .dog-page__table {
     width: 80%;
     margin: 25px auto 0 auto;
+    border-collapse: collapse;
+    padding-bottom: 15px;
 }
+
+ .table__item {
+     border: 3px solid colors.$color-highlight;
+     padding: 5px;
+     padding-left: 20px;
+ }
 
 
 

@@ -14,7 +14,7 @@ body {
     
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'work sans', sans-serif;
 }
 
@@ -54,7 +54,7 @@ h1, h2, h3 {
 @media screen and (min-width: 900px) {
     .content-wide-grid {
         display: grid;
-        gap: 30px;
+        gap: 20px;
         align-items: center;
         grid-template-columns: 1fr 2fr 1fr;
         grid-auto-rows: auto;

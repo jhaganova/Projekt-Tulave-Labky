@@ -1,142 +1,105 @@
 ---
-layout: main-template.njk
+layout: dog-page-template.njk
 title: Lulu
+dogname: Lulu
+dognameaddress: o Lulu
 ---
 
-
-        <div class="header">
-            <div class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a href="/" class="menu__link no-decor">Úvod</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="/psikovia/" class="menu__link menu__link--active no-decor">Psíkovia</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="/adopcia/" class="menu__link no-decor">Ako adoptovať</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="/pomoc/" class="menu__link no-decor">Ako pomôcť</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="/blog/" class="menu__link no-decor">Blog</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="/kontakt/" class="menu__link no-decor">Kontakt</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="content-main">
-
-            <div class="back-button">
-                <a href="/psikovia/" class="back-button__link">
-                    <img src="/images/backarrow.png" alt="Šípka späť" class="back-button__image">
-                </a>
-            </div>
-
-            <div class="dog-page__grid">
-
+<!-- 4 blank rows -->
                 <div class="dog-page__grid--left dog-page__images">
                     <div class="dog-page__image-wrap">
                         <div class="dog-page__images--big">
-                            <picture class="bubble-with-heart">
-                                <source media="(min-width: 900px)" srcset="/images/lulu1.jpg">
-                                <img class="dogbox__image" src="/images/lulu1-small.jpg" alt="psik">
-                            </picture>
+                            <a data-fslightbox href="/images/lulu1.jpg">
+                                <picture class="bubble-with-heart">
+                                    <source media="(min-width: 900px)" srcset="/images/lulu1.jpg">
+                                    <img class="dogbox__image dog-page__images--fade" src="/images/lulu1-small.jpg" alt="psik">
+                                </picture>
+                            </a>
 
-                            <img class="heart heart--left" src="/images/heart.png" alt="srdiečko">
+                            <img class="heart heart--left heart--visible" src="/images/heart.png" alt="srdiečko">
 
-                            <img class="heart heart--right" src="/images/heart.png" alt="srdiečko">
+                            <img class="heart heart--right heart--visible" src="/images/heart.png" alt="srdiečko">
                         </div>
                     
 
                         <div class="dog-page__images--small">
-                            <img class="bubble__image bubble__image--small" src="/images/lulu2-small.jpg" alt="psík">
-                            <img class="bubble__image bubble__image--small" src="/images/lulu3-small.jpg" alt="psík">
-                            <img class="bubble__image bubble__image--small" src="/images/lulu4-small.jpg" alt="psík">
+                            <div class="wrap">
+                                <a data-fslightbox href="/images/lulu2.jpg">
+                                    <img class="bubble__image bubble__image--small dog-page__images--fade" src="/images/lulu2-small.jpg" alt="psík">
+                                </a>
+                            </div>
+                            
+                            <div class="wrap">
+                            <a data-fslightbox href="/images/lulu3.jpg">
+                                <img class="bubble__image bubble__image--small dog-page__images--fade" src="/images/lulu3-small.jpg" alt="psík">
+                            </a>
+                            </div>
+
+                            <div class="wrap">
+                            <a data-fslightbox href="/images/lulu4.jpg">
+                                <img class="bubble__image bubble__image--small dog-page__images--fade" src="/images/lulu4-small.jpg" alt="psík">
+                            </a>
+                            </div>
                         </div>
                     </div>    
                 </div>
 
                 
                 <div class="dog-page__grid--right">
-                    <h3 class="dog-page__name">Lulu</h3>
+                    <h3 class="dog-page__name">{{ dogname }}</h3>
                     <p class="dog-page__description">Etiam non justo finibus, suscipit sem sed, tincidunt nunc. Nunc a justo non nisi pulvinar dictum sit amet non velit. Praesent turpis neque, pretium ac aliquet eget, fringilla in dui. Aliquam auctor tellus a lectus facilisis, sit amet vestibulum mauris pretium.</p>
 
                     <table class="dog-page__table">
                         <tr>
-                            <td>Pohlavie</td>
-                            <td>Fenka</td>
+                            <td class="table__item">Pohlavie</td>
+                            <td class="table__item">Fenka</td>
                         </tr>
 
                         <tr>
-                            <td>Vek</td>
-                            <td>5 rokov</td>
+                            <td class="table__item">Vek</td>
+                            <td class="table__item">5 rokov</td>
                         </tr>
                         <tr>
-                            <td>Kastrácia</td>
-                            <td>Ano</td>
+                            <td class="table__item">Kastrácia</td>
+                            <td class="table__item">Áno</td>
                         </tr>
                         <tr>
-                            <td>Čipovanie</td>
-                            <td>Ano</td>
+                            <td class="table__item">Čipovanie</td>
+                            <td class="table__item">Áno</td>
                         </tr>
                         <tr>
-                            <td>Veľkosť</td>
-                            <td>Malá</td>
+                            <td class="table__item">Veľkosť</td>
+                            <td class="table__item">Malá</td>
                         </tr>
                         <tr>
-                            <td>Povaha</td>
-                            <td>Milá, hravá</td>
-                        </tr>
-
-                        <tr>
-                            <td>Vhodná do bytu</td>
-                            <td>Ano</td>
-                        </tr>
-                        <tr>
-                            <td>Vhodná na dvor</td>
-                            <td>Nie</td>
-                        </tr>
-                        <tr>
-                            <td>Vhodná k deťom</td>
-                            <td>Ano</td>
+                            <td class="table__item">Povaha</td>
+                            <td class="table__item">Milá, hravá</td>
                         </tr>
 
                         <tr>
-                            <td>Vhodná k iným psom</td>
-                            <td>Spoločnosť si vyberá</td>
+                            <td class="table__item">Vhodná do bytu</td>
+                            <td class="table__item">Áno</td>
+                        </tr>
+                        <tr>
+                            <td class="table__item">Vhodná na dvor</td>
+                            <td class="table__item">Nie</td>
+                        </tr>
+                        <tr>
+                            <td class="table__item">Vhodná k deťom</td>
+                            <td class="table__item">Áno</td>
+                        </tr>
+
+                        <tr>
+                            <td class="table__item">Vhodná k iným psom</td>
+                            <td class="table__item">Spoločnosť si vyberá</td>
                         </tr>
                     </table>
                 </div>
 
 
-
-                <div class="dog-page__grid--left dog-page__adoption-bar">
-                    <p class="adoption-bar__text">Ak máte o Lulu záujem, prosím, informujte sa o procese adopcie a kontaktujte nás. Pri kontakte prosím nezabudnite uviesť meno psíka, o ktorého máte záujem. Ďakujeme.</p>
-                    
-
-                    <div class="button button--content-wide text__button">Ako prebieha adopcia</div>
-
-                    <div class="button button--content-wide text__button">Chcem psíka adoptovať</div>
-                </div>
+                
+                
 
 
 
 
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-        </div>

@@ -305,7 +305,12 @@ h1, h2, h3, h4 {
   border-radius: 10px;
 }
 .thankyou__image--short {
-  height: 150px;
+  height: 100px;
+}
+@media screen and (min-width: 400px) {
+  .thankyou__image--short {
+    height: 150px;
+  }
 }
 
 .help__image {

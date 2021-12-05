@@ -5,23 +5,19 @@
     margin: 40px 0;
     padding: 50px;
     background-color: colors.$color-highlight;
-    text-align: center;
-
-    
+    text-align: center;   
+    transition:
+        background-color 0.2s,
+        color 0.2s;
 
     @media screen and (min-width: 900px) {
         margin: 0;
     }
-
-
-
     &__link {
         color: colors.$color-body-bg;
         font-size: 20px;
         font-weight: bold;
     }
-
-
     
     &--wide {
         grid-column: span 3;

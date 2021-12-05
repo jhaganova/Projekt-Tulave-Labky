@@ -47,6 +47,8 @@
     background-color: colors.$color-highlight;
     border: 1px solid colors.$color-highlight;
     border-radius: 10px;
+    transition:
+        background-color 0.3s;
 
     &:hover {
         background-color: colors.$color-content-bg;

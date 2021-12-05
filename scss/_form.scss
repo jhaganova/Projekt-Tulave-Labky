@@ -1,0 +1,43 @@
+@use 'colors';
+@use 'common';
+
+.form {
+    padding: 20px;
+    border: 1px solid colors.$color-body-bg;
+    border-radius: 10px;
+    background-color: colors.$color-highlight;
+
+    &__field {
+        margin-bottom: 10px;
+        display: flex;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__label {
+        flex: 0 0 80px;
+    }
+}
+
+
+.form__input,
+.form__textarea {
+    width: 100%;
+    border: 1px solid colors.$color-body-bg;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: colors.$color-content-bg;
+}
+
+.form__textarea {
+    height: 100px;
+}
+
+.submit-button {
+    border: 1px solid colors.$color-body-bg;
+    border-radius: 20px;
+    padding: 15px 30px;
+    margin: 10px auto 0 auto;
+}

@@ -3,6 +3,7 @@
 
 .contact__content {
     max-width: 700px;
+    min-width: 350px;
     margin: auto;
     padding: 0 10px;
 }
@@ -21,7 +22,19 @@
 
 .contact__message-header + .contact__message-header {
     margin-top: 0.5em;
+    margin-bottom: 30px;
 }
+
+
+.contact__details {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 
 .contact__map {
@@ -50,9 +63,12 @@
 .contact-box {    
     max-width: 500px;
     padding: 0 20px;
+    padding-bottom: 20px;
     margin: auto;
-    margin-top: 30px;
-    background-color: colors.$color-highlight;
+    margin-top: 40px;
+    background-color: colors.$color-menu-bg;
     border: 1px solid colors.$color-highlight-hover;
     border-radius: 10px;
 }
+
+

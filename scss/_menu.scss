@@ -30,10 +30,19 @@
         border: 1px solid colors.$color-dark;
         color: colors.$color-dark;
         text-align: center;
+        transition: 
+            transform 0.5s,
+            background-color 0.5s,
+            color 0.5s;
+
 
         &:hover {
             color: colors.$color-content-bg;
             background-color: colors.$color-dark;
+        }
+
+        &:active {
+            transform: scale(0.9);
         }
 
         &--active {

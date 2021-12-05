@@ -7,6 +7,10 @@
     color: colors.$color-dark;
     text-align: center;
     padding: 10px;
+    transition: 
+        transform 0.2s,
+        background-color 0.5s,
+        color 0.5s;
 
     &--small {
         display: inline-block;
@@ -16,6 +20,10 @@
     &:hover {
         background-color: colors.$color-body-bg;
         color: colors.$color-content-bg;
+    }
+
+    &:active {
+        transform: scale(0.9);
     }
 }
 

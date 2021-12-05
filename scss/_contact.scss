@@ -1,0 +1,58 @@
+@use 'colors';
+@use 'common';
+
+.contact__content {
+    max-width: 700px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.contact__header {
+    margin-bottom: 10px;
+}
+
+.contact__details {
+    margin: 5px;
+}
+
+.contact__info + .contact__info {
+    margin: 20px auto;
+}
+
+.contact__message-header + .contact__message-header {
+    margin-top: 0.5em;
+}
+
+
+.contact__map {
+    overflow: hidden;
+    padding-bottom: 40%;
+    position: relative;
+    height: 0;
+    border: 3px solid colors.$color-body-bg;
+    border-radius: 10px;
+
+    @media screen and (min-width: 700px) {
+        padding-bottom: 80%;
+    }
+}
+
+.map {
+    border-radius: 10px;    
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+.contact-box {    
+    max-width: 500px;
+    padding: 0 20px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: colors.$color-highlight;
+    border: 1px solid colors.$color-highlight-hover;
+    border-radius: 10px;
+}

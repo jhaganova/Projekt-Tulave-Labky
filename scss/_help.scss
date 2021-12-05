@@ -10,3 +10,45 @@
     padding: 0 10px;
 }
 
+.help__header {
+    margin-top: 20px;
+}
+
+
+.help__textbox {
+    max-width: 500px;
+    margin: auto;
+}
+
+.help__contact {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.help__card {
+    border: 1px solid colors.$color-highlight-hover;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: colors.$color-highlight;
+}
+
+.help__rules {
+    margin-top: 40px;
+}
+
+.rules__header {
+    text-align: center;
+}
+
+.bank__header {
+    margin: 10px 0;
+}
+
+.bank__text {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.bank-details {
+    margin-top: 30px;
+}

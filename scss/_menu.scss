@@ -11,7 +11,7 @@
         display: flex;
         justify-content: center;
 
-        @media screen and (min-width: 550px) and (max-width: 770px) {
+        @media screen and (min-width: 550px) and (max-width: 780px) {
             justify-content: space-around;
         }
     }
@@ -44,7 +44,7 @@
 
         // hamburgerify vvvv
 
-        @media screen and (min-width: 550px) and (max-width: 770px) {
+        @media screen and (min-width: 550px) and (max-width: 780px) {
             margin: 2px;
             padding: 10px 10px;
         }

@@ -452,6 +452,11 @@ h1, h2, h3, h4 {
   }
 }
 
+.helpactive {
+  background-color: #85593a;
+  color: #FCF3E4;
+}
+
 .highlights {
   grid-column: span 3;
 }

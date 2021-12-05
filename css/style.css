@@ -731,9 +731,14 @@ h1, h2, h3, h4 {
 }
 
 .adoption__grid--left {
-  width: 350px;
+  width: 90%;
   margin: auto;
   padding-bottom: 20px;
+}
+@media screen and (min-width: 400px) {
+  .adoption__grid--left {
+    width: 350px;
+  }
 }
 @media screen and (min-width: 800px) {
   .adoption__grid--left {

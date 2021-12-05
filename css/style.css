@@ -101,7 +101,7 @@ h1, h2, h3, h4 {
 }
 .menu__toggle {
   padding: 10px;
-  font-size: 30px;
+  font-size: 24px;
   cursor: pointer;
   display: block;
 }

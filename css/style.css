@@ -33,7 +33,6 @@ h1, h2, h3, h4 {
 
 .content {
   max-width: 1100px;
-  min-width: 400px;
   margin: auto;
 }
 @media screen and (min-width: 650px) {
@@ -616,7 +615,6 @@ h1, h2, h3, h4 {
   grid-auto-rows: auto;
   grid-template-columns: 1fr;
   max-width: 500px;
-  min-width: 350px;
 }
 @media screen and (min-width: 700px) {
   .dog-page__grid {
@@ -794,7 +792,6 @@ h1, h2, h3, h4 {
 }
 
 .blog {
-  min-width: calc(300px - 40px);
   max-width: 800px;
   margin: 20px;
 }
@@ -859,7 +856,6 @@ h1, h2, h3, h4 {
 
 .help__content {
   max-width: 700px;
-  min-width: 400px;
   margin: auto;
   padding: 0 10px;
 }
@@ -908,7 +904,6 @@ h1, h2, h3, h4 {
 
 .contact__content {
   max-width: 700px;
-  min-width: 350px;
   margin: auto;
   padding: 0 10px;
 }

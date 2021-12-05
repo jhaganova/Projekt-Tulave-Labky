@@ -28,3 +28,30 @@
 .adoption-button__text {
     margin: 10px;
 }
+
+.button--dark {
+    background-color: colors.$color-dark;
+    color: colors.$color-content-bg;
+}
+
+
+
+.help-buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    gap: 10px;
+
+    @media screen and (min-width: 550px) {
+        gap: 20px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .help__button {
+        font-size: 14px;
+        padding: 5px;
+    }
+}

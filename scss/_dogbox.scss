@@ -14,10 +14,14 @@
 .dog__header::after {
     content: "";
     display: block;
-    width: 400px;
+    width: 200px;
     height: 1.5px;
     background-color: colors.$color-menu-bg;
     margin: 10px auto;
+
+    @media screen and (min-width: 550px) {
+        width: 400px;
+    }
 }
 
 

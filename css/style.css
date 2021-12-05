@@ -33,6 +33,7 @@ h1, h2, h3, h4 {
 
 .content {
   max-width: 1100px;
+  min-width: 400px;
   margin: auto;
 }
 @media screen and (min-width: 650px) {
@@ -100,8 +101,10 @@ h1, h2, h3, h4 {
   }
 }
 .menu__toggle {
+  margin-left: 10px;
   font-size: 26px;
   cursor: pointer;
+  display: block;
 }
 @media screen and (min-width: 550px) {
   .menu__toggle {
@@ -504,10 +507,15 @@ h1, h2, h3, h4 {
 .dog__header::after {
   content: "";
   display: block;
-  width: 400px;
+  width: 200px;
   height: 1.5px;
   background-color: #D2B48C;
   margin: 10px auto;
+}
+@media screen and (min-width: 550px) {
+  .dog__header::after {
+    width: 400px;
+  }
 }
 
 .dog__grid {

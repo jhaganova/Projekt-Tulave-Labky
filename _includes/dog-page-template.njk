@@ -3,7 +3,9 @@ layout: main-template.njk
 ---
 
         <div class="header">
-            <div class="menu">
+            <nav class="menu">
+                <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+                <label for="menu-checkbox" class="menu__toggle">&#9776 Menu</label>
                 <ul class="menu__list">
                     <li class="menu__item">
                         <a href="/" class="menu__link no-decor">Úvod</a>
@@ -24,7 +26,7 @@ layout: main-template.njk
                         <a href="/kontakt/" class="menu__link no-decor">Kontakt</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </div>
 
         <div class="content-main">

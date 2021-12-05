@@ -70,23 +70,53 @@ h1, h2, h3, h4 {
 .menu {
   background-color: #D2B48C;
 }
+.menu__checkbox {
+  position: absolute;
+  left: -9999px;
+}
+@media screen and (max-width: 549px) {
+  .menu__checkbox:checked ~ .menu__list {
+    display: block;
+  }
+}
 .menu__list {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
+  padding-bottom: 10px;
+  background-color: #D2B48C;
+  display: none;
 }
-@media screen and (min-width: 550px) and (max-width: 780px) {
+@media screen and (min-width: 550px) {
   .menu__list {
+    display: flex;
     justify-content: space-around;
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 780px) {
+  .menu__list {
+    justify-content: center;
+  }
+}
+.menu__toggle {
+  font-size: 26px;
+  cursor: pointer;
+}
+@media screen and (min-width: 550px) {
+  .menu__toggle {
+    display: none;
   }
 }
 .menu__item {
   margin: 0;
   padding: 0;
-  display: flex;
-  align-items: center;
+}
+@media screen and (min-width: 550px) {
+  .menu__item {
+    display: flex;
+    align-items: center;
+  }
 }
 .menu__link {
   display: block;
@@ -397,12 +427,16 @@ h1, h2, h3, h4 {
   }
 }
 
-@media screen and (max-width: 500px) {
+.help__button {
+  font-size: 14px;
+  padding: 5px;
+}
+@media screen and (min-width: 500px) {
   .help__button {
-    font-size: 14px;
-    padding: 5px;
+    font-size: 16px;
   }
 }
+
 .highlights {
   grid-column: span 3;
 }

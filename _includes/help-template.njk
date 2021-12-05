@@ -4,7 +4,9 @@ layout: main-template.njk
 
 
         <div class="header">
-            <div class="menu">
+            <nav class="menu">
+                <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+                <label for="menu-checkbox" class="menu__toggle">&#9776 Menu</label>
                 <ul class="menu__list">
                     <li class="menu__item">
                         <a href="/" class="menu__link no-decor">Úvod</a>
@@ -25,7 +27,7 @@ layout: main-template.njk
                         <a href="/kontakt/" class="menu__link no-decor">Kontakt</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
 
             <picture>
                 <source media="(min-width: 900px)" srcset="/images/header-help.jpg">
@@ -41,19 +43,19 @@ layout: main-template.njk
                 <div class="help-buttons-grid">
 
                     <a href="/materialna-pomoc/" class="no-decor">
-                        <div class="button button--content-wide text__button help__button">
+                        <div class="button text__button help__button">
                             <p>Materiálna pomoc</p>
                         </div>
                     </a>
 
                     <a href="/dobrovolnictvo/" class="no-decor">
-                        <div class="button button--content-wide text__button help__button">
+                        <div class="button text__button help__button">
                             <p>Dobrovoľníctvo</p>
                         </div>
                     </a>
 
                     <a href="/financna-pomoc/" class="no-decor">
-                        <div class="button button--content-wide text__button help__button">
+                        <div class="button text__button help__button">
                             <p>Finančná pomoc</p>
                         </div>
                     </a>

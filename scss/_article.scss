@@ -1,0 +1,44 @@
+@use 'colors';
+@use 'common';
+
+
+.article {
+        max-width: 600px;
+        padding: 10px;
+        margin: auto;
+
+    &__header {
+        text-align: center;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 200px;
+            height: 1.5px;
+            background-color: colors.$color-menu-bg;
+            margin: 10px auto 30px auto;
+        
+            @media screen and (min-width: 550px) {
+                width: 400px;
+            }
+        }
+    }
+
+    &__text {
+        text-indent: 20px;
+    }
+
+    &__image {
+        width: 100%;
+        min-height: 200px;
+        object-fit: cover;
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+
+}
+
+
+.article__header + .article__text::first-letter {
+    font-size: 25px;
+}

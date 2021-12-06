@@ -185,30 +185,52 @@ h1, h2, h3, h4 {
   display: block;
 }
 
-.header__textbox {
-  display: none;
+.header__text-image {
+  position: relative;
 }
 
-@media screen and (min-width: 900px) {
-  .header__text-image {
-    position: relative;
-    display: flex;
-  }
-
+.header__textbox {
+  display: inline-block;
+  position: absolute;
+  text-align: right;
+  top: 5px;
+  right: 5px;
+}
+@media screen and (min-width: 380px) {
   .header__textbox {
-    display: inline-block;
-    position: absolute;
-    text-align: right;
+    top: 10px;
+    right: 10px;
+  }
+}
+@media screen and (min-width: 550px) {
+  .header__textbox {
     top: 30px;
     right: 30px;
   }
+}
 
+.header__text {
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 0.5em;
+  color: #FCF3E4;
+}
+@media screen and (min-width: 380px) {
   .header__text {
-    margin: 0;
-    margin-bottom: 0.5em;
-    color: #FCF3E4;
+    font-size: 16px;
   }
 }
+@media screen and (min-width: 550px) {
+  .header__text {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .header__text {
+    font-size: 30px;
+  }
+}
+
 .bubble__image {
   border-radius: 50%;
   -o-object-fit: cover;
@@ -1009,6 +1031,14 @@ h1, h2, h3, h4 {
 }
 .form__label {
   flex: 0 0 80px;
+  font-size: 16px;
+  padding-top: 10px;
+}
+@media screen and (min-width: 550px) {
+  .form__label {
+    font-size: 14px;
+    padding-top: 0;
+  }
 }
 
 .form__input,
@@ -1016,8 +1046,16 @@ h1, h2, h3, h4 {
   width: 100%;
   border: 1px solid #664229;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 10px 10px;
   background-color: #FCF3E4;
+  font-size: 16px;
+}
+@media screen and (min-width: 550px) {
+  .form__input,
+.form__textarea {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
 }
 
 .form__textarea {

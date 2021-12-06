@@ -18,6 +18,14 @@
 
     &__label {
         flex: 0 0 80px;
+        font-size: 16px;
+        padding-top: 10px;
+
+        @media screen and (min-width: 550px) {
+            font-size: 14px;
+            padding-top: 0;
+        }
+        
     }
 }
 
@@ -27,8 +35,14 @@
     width: 100%;
     border: 1px solid colors.$color-body-bg;
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     background-color: colors.$color-content-bg;
+    font-size: 16px;
+
+    @media screen and (min-width: 550px) {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
 }
 
 .form__textarea {

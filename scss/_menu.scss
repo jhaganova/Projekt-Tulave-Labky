@@ -80,20 +80,23 @@
             transform: scale(0.9);
         }
 
-        &--active {
-            color: colors.$color-content-bg;
-            background-color: colors.$color-body-bg;
-        }
+        // &--active {
+        //     color: colors.$color-content-bg;
+        //     background-color: colors.$color-body-bg;
+        // }
 
         @media screen and (min-width: 550px) and (max-width: 780px) {
             margin: 2px;
             padding: 10px 10px;
         }
     }
-
-    
 }
 
+
+.menuactive {
+    color: colors.$color-content-bg;
+    background-color: colors.$color-body-bg;
+}
 
 
 

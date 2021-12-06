@@ -136,15 +136,16 @@ h1, h2, h3, h4 {
 .menu__link:active {
   transform: scale(0.9);
 }
-.menu__link--active {
-  color: #FCF3E4;
-  background-color: #664229;
-}
 @media screen and (min-width: 550px) and (max-width: 780px) {
   .menu__link {
     margin: 2px;
     padding: 10px 10px;
   }
+}
+
+.menuactive {
+  color: #FCF3E4;
+  background-color: #664229;
 }
 
 .text {
@@ -391,8 +392,16 @@ h1, h2, h3, h4 {
   font-size: 14px;
 }
 
+.footer__text + .footer__text {
+  margin-top: 0.5em;
+}
+
 .footer__text--small {
   font-size: 12px;
+}
+
+.footer__link {
+  color: #FCF3E4;
 }
 
 .content-block {
@@ -666,6 +675,13 @@ h1, h2, h3, h4 {
     grid-template-columns: 1fr 2fr;
     max-width: 850px;
     gap: 20px 50px;
+    padding-left: 20px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .dog-page__grid {
+    gap: 20px 50px;
+    padding: 0;
   }
 }
 

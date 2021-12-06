@@ -13,6 +13,14 @@
     font-size: 14px;
 }
 
+.footer__text + .footer__text {
+    margin-top: 0.5em;
+}
+
 .footer__text--small {
     font-size: 12px;
+}
+
+.footer__link {
+    color: colors.$color-content-bg;
 }

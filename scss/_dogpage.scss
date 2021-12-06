@@ -16,6 +16,12 @@
         grid-template-columns: 1fr 2fr;
         max-width: 850px;
         gap: 20px 50px;
+        padding-left: 20px;
+    }
+
+    @media screen and (min-width: 900px) {
+        gap: 20px 50px;
+        padding: 0;
     }
     
 }

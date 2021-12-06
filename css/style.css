@@ -104,6 +104,7 @@ h1, h2, h3, h4 {
   font-size: 24px;
   cursor: pointer;
   display: block;
+  text-align: right;
 }
 @media screen and (min-width: 550px) {
   .menu__toggle {
